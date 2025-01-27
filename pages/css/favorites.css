@@ -1,0 +1,115 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    background-color: #000; /* خلفية سوداء */
+    color: #fff; /* نص أبيض */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Container Styling */
+.container {
+    width: 90%; /* عرض الحاوية */
+    max-width: 1200px; /* أقصى عرض للحاوية */
+    min-height: 500px; /* ارتفاع مناسب */
+    background: linear-gradient(145deg, #1a1a1a, #333); /* تدرج لوني للخلفية */
+    border-radius: 20px; /* زوايا مستديرة */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), inset 0 0 10px #32CD32; /* تأثير داخلي وخارجي */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* مسافة بين العناصر */
+    position: relative; /* لتحديد مواضع العناصر الإضافية */
+}
+
+/* Title Styling */
+.container h1 {
+    font-size: 42px; /* تكبير النص */
+    margin-bottom: 10px;
+    color: #32CD32; /* لون أخضر مشابه للعشب */
+    text-shadow: 3px 3px 8px rgba(50, 205, 50, 0.8), 0 0 10px #32CD32;
+}
+
+/* Favorite List Styling */
+.favorite-list {
+    list-style: none; /* إزالة النقاط من القائمة */
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* مسافة بين العناصر */
+}
+
+/* Favorite Item Styling */
+.favorite-item {
+    background: linear-gradient(145deg, #1a1a1a, #333); /* تدرج لوني للخلفية */
+    border-radius: 15px; /* زوايا مستديرة */
+    padding: 20px;
+    border: 2px solid #32CD32; /* إطار أخضر */
+    box-shadow: 0 5px 15px rgba(50, 205, 50, 0.6);
+    transition: all 0.3s ease;
+}
+
+.favorite-item:hover {
+    transform: scale(1.02); /* تكبير العنصر عند التمرير */
+    box-shadow: 0 8px 20px rgba(50, 205, 50, 0.9);
+}
+
+/* Image Styling */
+.field-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #32CD32; /* إطار أخضر */
+    box-shadow: 0 5px 15px rgba(50, 205, 50, 0.6);
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+.favorite-item p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Details Button Styling */
+.details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #32CD32, #228B22); /* أخضر مشابه للعشب */
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(50, 205, 50, 0.8);
+    transition: all 0.3s ease;
+}
+
+.details-button:hover {
+    background: linear-gradient(90deg, #228B22, #32CD32); /* أخضر مشابه للعشب */
+    color: #fff;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(50, 205, 50, 0.9);
+}
+
+/* No Favorites Message Styling */
+.container p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
